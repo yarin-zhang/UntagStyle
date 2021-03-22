@@ -6,19 +6,25 @@
     {% header adaptor="modernizr" %}
 
     <!-- 模板静态资源 -->
-    {% assets 'base.css index.css m.css' %}
+    {% assets 'emstyle.css base.css index.css m.css bigfoot-number.css' %}
     {% endassets %}
 
     <!-- 二次开发静态资源 -->
-    {% assets 'dora.front.js white.css' %}
+    {% assets 'dora.front.js bigfoot.min.js jquery.min.js white.css ' %}
     {% endassets %}
+
+    <!--引入思源黑字体-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
+
+    <!--引入思源宋字体-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:100,300,400,500,700,900">
 
     {% endheader %}
 
 </head>
 
 
-<body class="is-preload {{body_class}}">
+<body class="is-preload {{body_class}} mac locale-zh-Hans white pingfangsc system">
 
     <!-- Nav -->
     {% include "./public/header.html" %}

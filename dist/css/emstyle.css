@@ -22,7 +22,7 @@ body{
 /* 全局字体与字间距调整（宋体版本） */
 p,
 div {
-    font-size: 1em;
+    font-size: 16px;
     font-family: 'Source Han Serif SC', 'Noto Serif SC', serif;
     font-weight: 500;
     letter-spacing:0.03em;
